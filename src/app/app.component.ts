@@ -12,4 +12,13 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Calculadora';
+  number1:number = 0;
+  number2:number = 0;
+  result:number = 0;
+
+  sumar():void{
+    console.log("Se sumo");
+    this.result=this.number1+this.number2;
+    
+  }
 }
