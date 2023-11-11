@@ -18,7 +18,11 @@ export class AppComponent {
 
   sumar():void{
     console.log("Se sumo");
-    this.result=this.number1+this.number2;
+    this.result = this.number1 + this.number2;
     
+  }
+  restar():void{
+    this.result = this.number1 - this.number2;
+    console.log(`se resto ${this.number1} y ${this.number2} y dio ${this.result}`);
   }
 }

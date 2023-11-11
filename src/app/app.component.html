@@ -1,9 +1,16 @@
-<h1>{{title}} hecha por DiegoMcMuffin</h1>
-
-<form>
-   Numero 1: <input type="text" [(ngModel)]="number1" name="number1"><br/>
-
-   Numero 2: <input type="text" [(ngModel)]="number2" name="number2"><br/>
-
-   <input type="submit" value="sumar">
-</form>
+<h1 class="display-4 text-center">{{title}} hecha por DiegoMcMuffin</h1>
+<div class="container mt-5">
+    <form>
+        <div class="form-group">
+            <label for="number1">Numero 1:</label>
+            <input type="number" [(ngModel)]="number1" name="number1" class="form-control" id="number1">
+        </div>
+        <div class="form-group">
+            <label for="number2">Numero 2:</label>
+            <input type="number" [(ngModel)]="number2" name="number2" class="form-control" id="number2">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="sumar()">Sumar</button>
+        <button type="submit" class="btn btn-primary ml-2" (click)="restar()">Restar</button>
+    </form>
+</div>
+<p class="mt-4">Resultado: {{result}}</p>
